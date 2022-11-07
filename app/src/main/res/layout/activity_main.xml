@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/idBtn2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/idTitle"
+        android:layout_width="321dp"
+        android:layout_height="76dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/idMesurement"
+        android:layout_width="313dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:text="@string/txtHint"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTitle" />
+
+    <RadioGroup
+        android:id="@+id/idBtnGrp"
+        android:layout_width="312dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idMesurement">
+
+        <RadioButton
+            android:id="@+id/idBtn1"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/txtBtn1" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txtBtn2" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/idBtnConvert"
+        android:layout_width="226dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/txtBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idBtnGrp" />
+
+    <TextView
+        android:id="@+id/idResult"
+        android:layout_width="368dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="72dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idBtnConvert" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
